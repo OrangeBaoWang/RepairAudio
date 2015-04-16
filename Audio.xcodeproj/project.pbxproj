@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		761E2CC21ADC5B9C00CD40E3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 761E2CC11ADC5B9C00CD40E3 /* main.c */; };
+		761E2CC91ADC5C5D00CD40E3 /* recv.c in Sources */ = {isa = PBXBuildFile; fileRef = 761E2CC81ADC5C5D00CD40E3 /* recv.c */; };
+		761E2CCF1ADC5C7900CD40E3 /* dct.c in Sources */ = {isa = PBXBuildFile; fileRef = 761E2CCE1ADC5C7900CD40E3 /* dct.c */; };
+		761E2CD11ADC5C7F00CD40E3 /* send.c in Sources */ = {isa = PBXBuildFile; fileRef = 761E2CD01ADC5C7F00CD40E3 /* send.c */; };
+		761E2CD31ADC5C8500CD40E3 /* wav.c in Sources */ = {isa = PBXBuildFile; fileRef = 761E2CD21ADC5C8500CD40E3 /* wav.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,13 @@
 /* Begin PBXFileReference section */
 		761E2CBE1ADC5B9C00CD40E3 /* Audio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Audio; sourceTree = BUILT_PRODUCTS_DIR; };
 		761E2CC11ADC5B9C00CD40E3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		761E2CC81ADC5C5D00CD40E3 /* recv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recv.c; sourceTree = "<group>"; usesTabs = 1; };
+		761E2CCC1ADC5C6F00CD40E3 /* interpolate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interpolate.h; sourceTree = "<group>"; };
+		761E2CCD1ADC5C7400CD40E3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		761E2CCE1ADC5C7900CD40E3 /* dct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dct.c; sourceTree = "<group>"; };
+		761E2CD01ADC5C7F00CD40E3 /* send.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send.c; sourceTree = "<group>"; };
+		761E2CD21ADC5C8500CD40E3 /* wav.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav.c; sourceTree = "<group>"; };
+		761E2CD41ADC5C8D00CD40E3 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				761E2CC11ADC5B9C00CD40E3 /* main.c */,
+				761E2CD41ADC5C8D00CD40E3 /* wav.h */,
+				761E2CD21ADC5C8500CD40E3 /* wav.c */,
+				761E2CD01ADC5C7F00CD40E3 /* send.c */,
+				761E2CCE1ADC5C7900CD40E3 /* dct.c */,
+				761E2CCD1ADC5C7400CD40E3 /* config.h */,
+				761E2CCC1ADC5C6F00CD40E3 /* interpolate.h */,
+				761E2CC81ADC5C5D00CD40E3 /* recv.c */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -118,7 +136,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761E2CD31ADC5C8500CD40E3 /* wav.c in Sources */,
+				761E2CD11ADC5C7F00CD40E3 /* send.c in Sources */,
+				761E2CCF1ADC5C7900CD40E3 /* dct.c in Sources */,
 				761E2CC21ADC5B9C00CD40E3 /* main.c in Sources */,
+				761E2CC91ADC5C5D00CD40E3 /* recv.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +254,7 @@
 				761E2CC71ADC5B9C00CD40E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
